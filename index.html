@@ -38,7 +38,7 @@
 
     <section id="hero">
         <div class="section__pic-container">
-            <img class="profile-img" src="./assets/profile-pic.png" alt="Blake Lawson Profile Picture" />
+            <img src="./assets/team-2.png" alt="Blake Lawson Profile Picture" class="profile-img" />
         </div>
         <div class="section__text">
             <p class="section__text__p1">Hello, I'm</p>
@@ -47,7 +47,7 @@
             <div class="btn-container">
                 <button 
                     class="btn btn-color-2" 
-                    onclick="window.open('./assets/resume-example.pdf')">
+                    onclick="window.open('./assets/resume.pdf')">
                     Download CV
                 </button>
                 <button 
@@ -62,7 +62,153 @@
             </div>
         </div>
     </section>
-
+    <section id="about">
+        <p class="section__text__p1">Get to know more. </p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img 
+                    src="./assets/about-pic.png" 
+                    alt="About Me Picture" 
+                    class="about-pic" />
+            </div>
+                <div class="about-details-container">
+                    <div class="about-containers">
+                        <div class="details-container">
+                            <img 
+                                src="./assets/experience.png"
+                                alt="Experience icon"
+                                class="icon" />
+                                <h3>Experience</h3>
+                                <p>2+ years <br />Web Development</p>
+                        </div>
+                        <div class="details-container">
+                            <img 
+                                src="./assets/education.png"
+                                alt="Education icon"
+                                class="icon" />
+                                <h3>Education</h3>
+                                <p>A.Sc Computer Science</p>
+                                <p>B.Sc Computer Science Concentraing <br /> in Mobile Development</p>
+                        </div>
+                    </div>
+                    <div class="text-container">
+                        <p>
+                            As a senior in Computer Science, I bring a blend of strong technical skills, leadership experience, 
+                            and an extroverted personality to the world of web development. 
+                            From writing my first lines of code to debugging complex algorithms, my academic journey has been 
+                            focused on building a comprehensive skill set that meets the challenges of today's digital landscape.
+                        <br />
+                        <br />
+                            My enthusiasm for collaboration and effective communication sets me apart in team settings, 
+                            where I've often stepped into leadership roles. Committed to lifelong learning and adapting to new technologies, 
+                            I'm not just preparing for a career in Computer Science—I'm gearing up to make a meaningful impact in the field.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'">
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explore my</p>
+        <h3 class="title">Experience</h3>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Licenses & Certificates</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Verified Icon" class="icon" />
+                            <div>
+                                <h3>Full Sail University</h3>
+                                <p>Salutatorian in the Computer Science Program</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Verified Icon" class="icon" />
+                            <div>
+                                <h3>Design+Code</h3>
+                                <p>Advanced Development in SwiftUI</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Companies</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Verified Icon" class="icon" />
+                            <div>
+                                <h3>Farmers Insurance</h3>
+                                <p>Cloud Portfolio Managment</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Verified Icon" class="icon" />
+                            <div>
+                                <h3>Patriot Air Solutions</h3>
+                                <p>Web Developer</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'">
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse my Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-1.png" alt="Project 1" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Patriot Air Solutions</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://patriotairsolutions.com'">View Live Site</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'">
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get in touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+              <img
+                src="./assets/email.png"
+                alt="Email icon"
+                class="icon contact-icon email-icon"
+              />
+              <p><a href="mailto:blawson490@gmail.com">blawson490@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+              <img
+                src="./assets/linkedin.png"
+                alt="LinkedIn icon"
+                class="icon contact-icon"
+              />
+              <p><a href="https://www.linkedin.com/in/williamblakelawson">LinkedIn</a></p>
+            </div>
+          </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container ">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2023 William Blake Lawson. All rights reserved.</p>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
