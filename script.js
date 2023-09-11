@@ -55,3 +55,44 @@ function erase() {
 
 // Start the typing effect once the page is loaded
 window.onload = type;
+
+
+function generateFavicon() {
+    const canvas = document.createElement('canvas');
+    canvas.width = 100; // You can adjust the resolution. This is 100x100 for clarity.
+    canvas.height = 100;
+    const ctx = canvas.getContext('2d');
+
+    // Background
+    ctx.fillStyle = 'white';
+    ctx.fillRect(0, 0, 100, 100);
+
+    // Rounded corners
+    const radius = 15; // Adjust the corner radius as needed
+    ctx.clearRect(0, 0, radius, radius);
+    ctx.clearRect(100 - radius, 0, radius, radius);
+    ctx.clearRect(0, 100 - radius, radius, radius);
+    ctx.clearRect(100 - radius, 100 - radius, radius, radius);
+
+    // Text overlay
+    ctx.fillStyle = 'black';
+    ctx.font = '300 60px Poppins'; // Adjust font size and family as needed
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    ctx.fillText('BL', canvas.width / 2, canvas.height / 2);
+
+    return canvas.toDataURL(); // Convert canvas to data URL
+}
+
+const faviconDataURL = generateFavicon();
+
+
+function setFavicon(dataURL) {
+    let link = document.querySelector('link[rel*="icon"]') || document.createElement('link');
+    link.type = 'image/x-icon';
+    link.rel = 'shortcut icon';
+    link.href = dataURL;
+    document.getElementsByTagName('head')[0].appendChild(link);
+}
+
+setFavicon(faviconDataURL);
