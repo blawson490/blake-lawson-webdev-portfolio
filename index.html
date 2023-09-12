@@ -270,78 +270,42 @@
       <h1 class="title">Contact Me</h1>
 
       <!-- Begin the form -->
-      <form
-        name="contact"
-        method="POST"
-        class="contact-form"
-        data-netlify-recaptcha="true"
-        data-netlify="true"
-      >
+      <form name="contact" class="contact-form" netlify>
         <div class="form-content">
           <div class="personal-info">
             <div class="input-group">
               <label for="name">Name</label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Full Name (Required)"
-              />
+              <input type="text" id="name" name="name" placeholder="Full Name (Required)"/>
             </div>
 
             <div class="input-group">
               <label for="phone">Phone Number*</label>
-              <input
-                type="tel"
-                id="phone"
-                name="phone"
-                placeholder="Email or Phone (Required)"
-              />
+              <input type="tel" id="phone" name="phone" placeholder="Email or Phone (Required)"/>
             </div>
 
             <div class="input-group">
               <label for="email">Email*</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Email or Phone (Required)"
-              />
+              <input type="email" id="email" name="email" placeholder="Email or Phone (Required)"/>
             </div>
           </div>
           <div class="message-group">
             <div class="input-group">
               <label for="subject">Subject</label>
-              <input
-                type="text"
-                id="subject"
-                name="subject"
-                placeholder="Subject of Message (Required)"
-              />
+              <input type="text" id="subject" name="subject" placeholder="Subject of Message (Required)"/>
             </div>
 
             <div class="input-group">
               <label for="message">Message</label>
-              <textarea
-                id="message"
-                name="message"
-                placeholder="Message (Required)"
-              ></textarea>
+              <textarea id="message" name="message" placeholder="Message (Required)"></textarea>
             </div>
           </div>
         </div>
         <div class="form-footer">
-          <div class="form-footer-text">
-            <p>*Either phone number or email required.</p>
-          </div>
+            <div class="form-footer-text">
+                <p>*Either phone number or email required.</p>
+            </div>
           <div class="btn-container">
-            <button
-              type="submit"
-              disabled="true"
-              class="btn btn-color-1 submit-btn"
-            >
-              Submit
-            </button>
+            <button type="submit" disabled="true" class="btn btn-color-1 submit-btn">Submit</button>
           </div>
         </div>
       </form>
