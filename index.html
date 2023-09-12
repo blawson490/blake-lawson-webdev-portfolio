@@ -6,6 +6,7 @@
     <title>Blake Lawson's Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="manifest" href="manifest.json" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
       rel="stylesheet"
@@ -50,10 +51,13 @@
           <span></span>
         </div>
         <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          <ul>
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </ul>
+          ß
         </div>
       </div>
     </nav>
@@ -167,7 +171,7 @@
       <div class="experience-details-container">
         <div class="about-containers">
           <div class="details-container">
-            <h2 class="experience-sub-title">Licenses & Certificates</h2>
+            <h4 class="experience-sub-title">Licenses & Certificates</h4>
             <div class="article-container">
               <article>
                 <img
@@ -194,7 +198,7 @@
             </div>
           </div>
           <div class="details-container">
-            <h2 class="experience-sub-title">Companies</h2>
+            <h4 class="experience-sub-title">Companies</h4>
             <div class="article-container">
               <article>
                 <img
@@ -242,9 +246,9 @@
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">
+            <h4 class="experience-sub-title project-title">
               Patriot Air Solutions
-            </h2>
+            </h4>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
@@ -275,37 +279,67 @@
           <div class="personal-info">
             <div class="input-group">
               <label for="name">Name</label>
-              <input type="text" id="name" name="name" placeholder="Full Name (Required)"/>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Full Name (Required)"
+              />
             </div>
 
             <div class="input-group">
               <label for="phone">Phone Number*</label>
-              <input type="tel" id="phone" name="phone" placeholder="Email or Phone (Required)"/>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Email or Phone (Required)"
+              />
             </div>
 
             <div class="input-group">
               <label for="email">Email*</label>
-              <input type="email" id="email" name="email" placeholder="Email or Phone (Required)"/>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email or Phone (Required)"
+              />
             </div>
           </div>
           <div class="message-group">
             <div class="input-group">
               <label for="subject">Subject</label>
-              <input type="text" id="subject" name="subject" placeholder="Subject of Message (Required)"/>
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                placeholder="Subject of Message (Required)"
+              />
             </div>
 
             <div class="input-group">
               <label for="message">Message</label>
-              <textarea id="message" name="message" placeholder="Message (Required)"></textarea>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Message (Required)"
+              ></textarea>
             </div>
           </div>
         </div>
         <div class="form-footer">
-            <div class="form-footer-text">
-                <p>*Either phone number or email required.</p>
-            </div>
+          <div class="form-footer-text">
+            <p>*Either phone number or email required.</p>
+          </div>
           <div class="btn-container">
-            <button type="submit" disabled="true" class="btn btn-color-1 submit-btn">Submit</button>
+            <button
+              type="submit"
+              disabled="true"
+              class="btn btn-color-1 submit-btn"
+            >
+              Submit
+            </button>
           </div>
         </div>
       </form>
