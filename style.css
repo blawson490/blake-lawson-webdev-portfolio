@@ -589,20 +589,30 @@ footer p {
 }
 
 @media screen and (max-width: 600px) {
-  #contact,
   footer {
-    height: 40vh;
+    height: auto;
   }
+
+  #contact {
+    height: auto;
+  }
+
+  #projects {
+    padding-bottom: 20rem;
+  }
+
   #profile {
     height: 83vh;
     margin-bottom: 0;
   }
+
   article {
     font-size: 1rem;
   }
   footer nav {
     height: fit-content;
-    margin-bottom: 2rem;
+    margin-top: 20rem;
+
   }
   .contact-info-container {
     margin: 0;
@@ -623,9 +633,10 @@ footer p {
     gap: 0.5rem;
     text-align: center;
   }
+
   .section__pic-container {
     width: auto;
-    height: 46vw;
+    height: 46vh;
     justify-content: center;
   }
   .section__text__p2 {
@@ -639,5 +650,9 @@ footer p {
     word-break: normal;
     overflow-wrap: normal;
     overflow: normal;
+  }
+
+  .form-content {
+    flex-direction: column;
   }
 }
