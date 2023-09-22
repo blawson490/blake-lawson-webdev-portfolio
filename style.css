@@ -287,6 +287,9 @@ img.icon {
 }
 
 .about-containers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 2rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
@@ -392,8 +395,8 @@ article .icon {
 
 .project-img {
   border-radius: 2rem;
-  width: 90%;
-  height: 90%;
+  width: 346px;
+  height: 346px;
 }
 
 .project-title {
