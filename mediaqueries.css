@@ -53,10 +53,6 @@
     .about-containers {
       margin-top: 0;
     }
-
-    .details-container .color-container {
-      margin-top: 2rem;
-    }
   }
   
   @media screen and (max-width: 600px) {
@@ -106,5 +102,23 @@
     }
     .text-container {
       text-align: justify;
+    }
+
+    .details-container .color-container {
+      margin-top: 2rem;
+    }
+
+    #projects {
+      margin-top: 2rem;
+      padding-left: 10px;
+      padding-right: 2px;
+    }
+
+    #contact {
+      margin-top: 25rem;
+    }
+
+    .footer {
+      margin-top: 25rem;
     }
   }
