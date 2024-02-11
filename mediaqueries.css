@@ -27,6 +27,7 @@
     .contact-info-upper-container,
     .btn-container {
       flex-wrap: wrap;
+      margin-top: 2rem;
     }
     #hero,
     #profile,
@@ -51,6 +52,10 @@
     }
     .about-containers {
       margin-top: 0;
+    }
+
+    .details-container .color-container {
+      margin-top: 2rem;
     }
   }
   
